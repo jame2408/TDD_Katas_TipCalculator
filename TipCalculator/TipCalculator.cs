@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TipCalculator
 {
-    public class Class1
+    public class TipCalculator
     {
     }
 }
