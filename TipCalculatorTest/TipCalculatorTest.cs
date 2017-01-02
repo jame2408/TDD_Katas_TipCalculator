@@ -5,7 +5,7 @@ namespace TipCalculatorTest
     [TestClass]
     public class TipCalculatorTest
     {
-        TipCalculator.TipCalculator target;
+        TipCalculator.ITipCalculator target;
         public TipCalculatorTest()
         {
             target = new TipCalculator.TipCalculator();

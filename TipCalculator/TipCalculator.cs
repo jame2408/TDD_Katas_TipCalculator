@@ -2,7 +2,7 @@
 
 namespace TipCalculator
 {
-    public class TipCalculator
+    public class TipCalculator : ITipCalculator
     {
         private double _tip;
 
