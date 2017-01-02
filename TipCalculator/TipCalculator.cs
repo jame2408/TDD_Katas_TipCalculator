@@ -22,7 +22,17 @@ namespace TipCalculator
 
         public void CaclTipAndTotalAmount(double billAmount, double tipRate)
         {
+            CaclTip(billAmount, tipRate);
+            CaclTotalAmount(billAmount);
+        }
+
+        private void CaclTip(double billAmount, double tipRate)
+        {
             _tip = Math.Round(billAmount * tipRate / 100, 2);
+        }
+
+        private void CaclTotalAmount(double billAmount)
+        {
             _totalAmount = billAmount + _tip;
         }
     }
