@@ -1,4 +1,6 @@
-﻿namespace TipCalculator
+﻿using System;
+
+namespace TipCalculator
 {
     public class TipCalculator
     {
@@ -20,7 +22,7 @@
 
         public void CaclTipAndTotalAmount(double billAmount, double tipRate)
         {
-            _tip = billAmount * tipRate / 100;
+            _tip = Math.Round(billAmount * tipRate / 100, 2);
             _totalAmount = billAmount + _tip;
         }
     }

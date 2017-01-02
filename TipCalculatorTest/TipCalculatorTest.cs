@@ -26,7 +26,7 @@ namespace TipCalculatorTest
         }
 
         [TestMethod]
-        public void MyTestMethod()
+        public void 確認計算小費時是否有四捨五入至小數第二位()
         {
             //arrange
             double billAmount = 11.25d;
