@@ -53,6 +53,12 @@
     <Compile Include="TipCalculatorTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TipCalculator\TipCalculator.csproj">
+      <Project>{edc93d2d-d409-4c95-9e15-eabe955c1db3}</Project>
+      <Name>TipCalculator</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
