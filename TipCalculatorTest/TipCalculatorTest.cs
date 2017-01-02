@@ -39,5 +39,35 @@ namespace TipCalculatorTest
             Assert.AreEqual(1.69d, target.tip);
             Assert.AreEqual(12.94d, target.totalAmount);
         }
+
+        [TestMethod]
+        public void 確認費率為0時計算結果()
+        {
+            //arrange
+            double billAmount = 8d;
+            double tipRate = 0;
+
+            //Act
+            target.CaclTipAndTotalAmount(billAmount, tipRate);
+
+            //Assert
+            Assert.AreEqual(0d, target.tip);
+            Assert.AreEqual(8d, target.totalAmount);
+        }
+
+        [TestMethod]
+        public void 確認沒消費時計算結果()
+        {
+            //arrange
+            double billAmount = 0d;
+            double tipRate = 10;
+
+            //Act
+            target.CaclTipAndTotalAmount(billAmount, tipRate);
+
+            //Assert
+            Assert.AreEqual(0d, target.tip);
+            Assert.AreEqual(0d, target.totalAmount);
+        }
     }
 }
